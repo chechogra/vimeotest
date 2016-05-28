@@ -1,10 +1,8 @@
-/* global malarkey:false, moment:false */
 (function() {
   'use strict';
 
   angular
     .module('vimeotest')
-    .constant('malarkey', malarkey)
-    .constant('moment', moment);
+    .constant('accessToken', '1b6ac9d70dc6d8d6ff5b5c47b99fb371');
 
 })();
