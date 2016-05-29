@@ -1,23 +1,25 @@
 $footer-height: 50px;
 
+//noinspection ALL
 @font-face {
   font-family: 'AvenirNextLTPro';
-  src: url('assets/fonts/avenirnextltpro/AvenirNextLTPro-Regular.eot');
-  src: url('assets/fonts/avenirnextltpro/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
-  url('assets/fonts/avenirnextltpro/AvenirNextLTPro-Regular.woff') format('woff'),
-  url('assets/fonts/avenirnextltpro/AvenirNextLTPro-Regular.ttf') format('truetype'),
-  url('assets/fonts/avenirnextltpro/AvenirNextLTPro-Regular.svg#AvenirNextLTPro-Regular') format('svg');
+  src: url('../app/assets/fonts/avenirnextltpro/AvenirNextLTPro-Regular.eot');
+  src: url('../app/assets/fonts/avenirnextltpro/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../app/assets/fonts/avenirnextltpro/AvenirNextLTPro-Regular.woff') format('woff'),
+  url('../app/assets/fonts/avenirnextltpro/AvenirNextLTPro-Regular.ttf') format('truetype'),
+  url('../app/assets/fonts/avenirnextltpro/AvenirNextLTPro-Regular.svg#AvenirNextLTPro-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
+//noinspection ALL
 @font-face {
   font-family: 'AvenirNextLTPro';
-  src: url('assets/fonts/avenirnextltpro/AvenirNextLTPro-Demi.eot');
-  src: url('assets/fonts/avenirnextltpro/AvenirNextLTPro-Demi.eot?#iefix') format('embedded-opentype'),
-  url('assets/fonts/avenirnextltpro/AvenirNextLTPro-Demi.woff') format('woff'),
-  url('assets/fonts/avenirnextltpro/AvenirNextLTPro-Demi.ttf') format('truetype'),
-  url('assets/fonts/avenirnextltpro/AvenirNextLTPro-Demi.svg#AvenirNextLTPro-Demi') format('svg');
+  src: url('../app/assets/fonts/avenirnextltpro/AvenirNextLTPro-Demi.eot');
+  src: url('../app/assets/fonts/avenirnextltpro/AvenirNextLTPro-Demi.eot?#iefix') format('embedded-opentype'),
+  url('../app/assets/fonts/avenirnextltpro/AvenirNextLTPro-Demi.woff') format('woff'),
+  url('../app/assets/fonts/avenirnextltpro/AvenirNextLTPro-Demi.ttf') format('truetype'),
+  url('../app/assets/fonts/avenirnextltpro/AvenirNextLTPro-Demi.svg#AvenirNextLTPro-Demi') format('svg');
   font-weight: bold;
   font-style: normal;
 }
