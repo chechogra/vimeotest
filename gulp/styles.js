@@ -21,30 +21,12 @@ gulp.task('styles', function() {
 });
 
 var buildStyles = function() {
-  var sassOptions = {
-    style: 'expanded'
-  };
-
-  var injectFiles = gulp.src([
-    path.join(conf.paths.src, '/app/styles/**/*.scss'),
-    path.join('!' + conf.paths.src, '/app/styles/main.scss')
-  ], { read: false });
-
-  var injectOptions = {
-    transform: function(filePath) {
-      filePath = filePath.replace(conf.paths.src + '/app/', '');
-      return '@import "' + filePath + '";';
-    },
-    starttag: '// injector',
-    endtag: '// endinjector',
-    addRootSlash: false
-  };
+  var sassOptions = { style: 'expanded' };
 
 
   return gulp.src([
     path.join(conf.paths.src, '/app/styles/main.scss')
   ])
-    .pipe($.inject(injectFiles, injectOptions))
     .pipe(wiredep(_.extend({}, conf.wiredep)))
     .pipe($.sourcemaps.init())
     .pipe($.sass(sassOptions)).on('error', conf.errorHandler('Sass'))
