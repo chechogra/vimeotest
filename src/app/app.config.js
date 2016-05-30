@@ -29,6 +29,8 @@
       return 'en';
     }).fallbackLanguage('en');
 
+    $translateProvider.useSanitizeValueStrategy('escape');
+
     // Enable log
     $logProvider.debugEnabled(true);
   }
